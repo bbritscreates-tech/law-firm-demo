@@ -137,6 +137,58 @@ a {
     width: 500px;
 }
 
-.cost-calculator-section {
+.index-services-container {
+    width: 100%;
+    height: auto;
+}
+.index-services-heading {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.index-services-heading h3 {
+    font-size: 25px;
+    color: rgb(11, 45, 145, 1);
+}
+
+.index-services-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px;
+
+}
+
+.box {
+    flex: 0 0 280px;
+    border: solid black;
+    text-align: center;
     
+}
+
+.box img {
+    width: 100%;
+    height: 200px;
+    object-position: center;
+}
+
+.box h5 {
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.box p {
+    font-size: 15px;
+    padding: 15px 15px;
+}
+
+.box-over {
+    border: solid gray;
+    width: 250px;
+    justify-self: center;
+    z-index: 2;
 }
