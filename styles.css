@@ -499,3 +499,12 @@ button {
     color: gray;
     padding: 20px 15px;
 }
+
+.services-content ul {
+    color: gray;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+}
