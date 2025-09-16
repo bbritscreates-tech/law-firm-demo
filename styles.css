@@ -150,45 +150,54 @@ a {
 }
 
 .index-services-heading h3 {
-    font-size: 25px;
+    font-size: 30px;
     color: rgb(11, 45, 145, 1);
 }
 
-.index-services-container {
+.index-services-box {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0 20px;
+    padding: 20px 20px;
 
 }
 
 .box {
-    flex: 0 0 280px;
-    border: solid black;
-    text-align: center;
-    
+  overflow: hidden;
+  position: relative;
+  flex: 0 0 270px;
 }
 
 .box img {
-    width: 100%;
-    height: 200px;
-    object-position: center;
+  width: 100%;
+  height: 200px;       /* fixed height */
+  object-fit: cover;   /* crop nicely */
+  display: block;
 }
 
 .box h5 {
     font-size: 18px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .box p {
-    font-size: 15px;
-    padding: 15px 15px;
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 .box-over {
-    border: solid gray;
-    width: 250px;
-    justify-self: center;
-    z-index: 2;
+  position: relative;
+  margin-top: -60px;    /* overlap image */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75%;           /* smaller than image */
+  background: #2d3a63;
+  color: #fff;
+  text-align: center;
+  padding: 10px 15px;
+  z-index: 2;
+  border-radius: 6px;   /* optional rounded corners */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* subtle 3D effect */
 }
