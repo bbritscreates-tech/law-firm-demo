@@ -6,6 +6,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* stop sideways scroll */
+    scroll-behavior: smooth;
 }
 
 a {
@@ -119,6 +120,7 @@ a {
     color: rgb(11, 45, 145, 1);
     padding-bottom: 20px;
     width: 200px;
+    text-transform: uppercase;
 }
 
 .index-about a {
@@ -149,8 +151,9 @@ a {
 }
 
 .index-services-heading h3 {
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(11, 45, 145, 1);
+    text-transform: uppercase;
 }
 
 .index-services-box {
@@ -223,6 +226,10 @@ a {
     border-radius: 6px;
 }
 
+.text a:hover {
+    color: #CFAF64;
+}
+
 .text a {
     text-decoration: none;
     color: white;
@@ -244,7 +251,7 @@ a {
 }
 
 hr {
-    border: 1px solid #fff;
+    border: 1px solid #CFAF64;
 }
 
 .cost-calculator-section h2 {
@@ -263,4 +270,96 @@ hr {
     background-color: rgb(11, 45, 145, 0.5);
     padding: 8px 10px;
     border-radius: 6px;
+}
+
+.cost-calculator-section a:hover {
+    color: #CFAF64;
+}
+
+footer {
+    width: 100%;
+    background-color: #2d3a63;
+}
+
+.footer-heading {
+    justify-items: center;
+    padding: 20px 0;
+}
+
+.footer-heading hr {
+    width: 760px;
+}
+
+.footer-heading p {
+    padding: 10px 0;
+    font-size: 25px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.footer-box {
+    flex: 1;
+    padding: 20px 20px;
+    border: 1px solid #CFAF64;
+    justify-items: center;
+}
+
+h4 {
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 15px;
+}
+
+.social-links {
+    text-decoration: none;
+    color: #CFAF64;
+}
+
+.social-links:hover {
+    color: #fff;
+}
+
+i {
+    padding: 8px 8px;
+}
+
+form input {
+    width: 97%;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    width: 97.5%;
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    background-color: #CFAF64;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 8px;
+}
+
+.box p {
+    font-size: 15px;
+    color: #fff;
+}
+
+.copyright {
+    justify-items: center;
+    padding: 10px 0;
+}
+
+.copyright p {
+    color: #fff;
 }

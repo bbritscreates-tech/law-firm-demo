@@ -10,20 +10,23 @@
 
     <body>
         <header>
-            <section>
-                <div class="logo">
-                    <img src="assets/logos/Lawfirm Demo Logo.png" alt="Harrington & Cole Attorneys Logo"/>
-                </div>
-                <div>
-                    <p>Harrington & Cole Attorneys</p>
-                </div>
-                <nav>
-                    <a href="/index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="services.html">Services</a>
-                    <a href="team.html">Team</a>
-                    <a href="#contact">Contact</a>
-                </nav>
+            <section class="navbar">
+                <div class="navbar-inner">
+                    <div class="brand">
+                        <img src="assets/logos/Lawfirm Demo Logo.png" alt="Harrington & Cole Attorneys Logo"/>
+                        <span class="brand-name">Harrington & Cole Attorneys</span>
+                    </div>
+
+                    <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+
+                    <nav class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="team.html">Team</a>
+                        <a href="#contact-form">Contact</a>
+                    </nav>
+                </div>    
             </section>
         </header>
 
@@ -37,27 +40,27 @@
         </main>
 
         <footer>
-            <div>
+            <div class="footer-heading">
                 <hr>
-                <p>Placeholder</p>
+                <p>A team you can trust</p>
                 <hr>
             </div>
-            <div>
-                <div class="box">
-                    <p>Contact</p>
-                    <a href="mailto:hello@britswebsolutions.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://facebook.com/yourpage" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href=""><i></i></a>+27 21 123 4567
-                    <a href=""><i></i></a>info@demo-law.co.za
-                    <a href=""><i></i></a>Facebook	https://www.facebook.com/HarringtonColeAttorneys
-                                            Instagram	https://www.instagram.com/HarringtonColeAttorneys
-                                            LinkedIn	https://www.linkedin.com/company/harrington-cole-attorneys
-                    <a href=""><i></i></a>
+            <div class="box-container">
+                <div class="footer-box">
+                    <h4>Contact</h4>
+                    <div>
+                        <a class="social-links" href="https://www.facebook.com/HarringtonColeAttorneys" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a class="social-links" href="https://www.instagram.com/HarringtonColeAttorneys" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="social-links" href="https://www.linkedin.com/company/harrington-cole-attorneys" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div>    
+                        <a class="social-links" href="tel:+27 21 123 4567" target="_blank" aria-label="Phone"><i class="fa-solid fa-phone"></i>+27 21 123 4567</a><br>
+                        <a class="social-links" href="mailto:info@demo-law.co.za" target="_blank" aria-label="email"><i class="fa-solid fa-envelope"></i>info@demo-law.co.za</a>
+                    </div>    
                 </div>
-                <div class="box" id="contact">
-                    <form>
+                <div class="footer-box">
+                    <h4>We'll contact you</h4>
+                    <form id="contact-form" method="POST" name="contact">
                         <input name="name" type="text" placeholder="Your Name*">
                         <input name="number" type="tel" placeholder="Your Contact Number*">
                         <input name="email" type="email" placeholder="Your E-mail*">
@@ -65,15 +68,15 @@
                         <button type="submit">Submit</button>
                     </form>
                 </div>
-                <div class="box">
-                    <p>Address</p>
+                <div class="footer-box">
+                    <h4>Address</h4>
                     <p>123 Main Street<br>Suite 400<br>Cape Town<br>8001<br>South Africa</p>
                 </div>
-                <div class="box">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.1234567890123!2d18.4233!3d-33.9249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc67b1d0000001%3A0xabcdef1234567890!2s123+Main+St%2C+Cape+Town%2C+8001%2C+South+Africa!5e0!3m2!1sen!2sza!4v1694770000000" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="footer-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3301.1234567890123!2d18.4233!3d-33.9249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc67b1d0000001%3A0xabcdef1234567890!2s123+Main+St%2C+Cape+Town%2C+8001%2C+South+Africa!5e0!3m2!1sen!2sza!4v1694770000000" width="205" height="205" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <div>
+            <div class="copyright">
                 <p>&copy; Copyright Harrington & Cole Attorneys. All rights reserved 2025</p>
             </div>
         </footer>
