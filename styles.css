@@ -331,12 +331,12 @@ i {
     padding: 8px 8px;
 }
 
-form input {
+.footer-box form input {
     width: 97%;
     margin-bottom: 10px;
 }
 
-form textarea {
+.footer-box form textarea {
     width: 97.5%;
     margin-bottom: 10px;
 }
@@ -512,29 +512,33 @@ button {
 .calculator-section {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 30px 40px;
-    height: auto;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 30px 35px;
 }
 
-.calculator-divs {
+.calculator-divs{
+    flex: initial;
+}
 
+.calculator-divs img {
+    width: 600px;
+    height: auto;
+    display: block;
 }
 
 .accordion {
-    max-width: 600px;
-    margin: 20 auto;
+    width: 350px;
     border-radius: 5px;
     overflow: hidden;
-}
-
-.accordion-inner {
-
+    border: 1px solid #ddd;
+    padding: 5px 5px;
 }
 
 .accordion-header {
-    width: 100%;
-    padding: 15px;
+    padding: 8px 10px;
     background: #3D4162;
     color: #fff;
     text-align: left;
@@ -544,6 +548,8 @@ button {
     cursor: pointer;
     position: relative;
     transition: background 0.3s;
+    margin-bottom: 5px;
+    width: 350px;
 }
 
 .accordion-header:hover {
@@ -579,16 +585,93 @@ button {
 .accordion-content form button {
     background-color: #CFAF64;
     color: #2d3a63;
+    margin: 10px auto;
 }
+
 .accordion-content form button:hover {
     background-color: #2d3a63;
     color: #CFAF64;
 }
 
-.accordion-content-inner {
-
+.accordion-content-inner-header {
+    padding: 8px 10px;
+    background: gray;
+    color: #fff;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s;
+    margin-bottom: 5px;
+    width: 300px;
 }
 
-.calculator-divs img {
-    width: 600px;
+.accordion-content-inner-header:hover {
+    background: #CFAF64;
+}
+
+.accordion-content-inner-header::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.accordion-content-inner-header.active::after {
+    content: "-";
+}
+
+.inner-header-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #F9F9F9;
+    padding: 0 15px;
+    transition: max-height 0.4s ease, padding 0.3s;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+/* Default state: hidden */
+.accordion-content,
+.inner-header-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0 15px;
+}
+
+.accordion-content form label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d3a63;
+}
+
+.accordion-content form input {
+    margin: 10px 0;
+    width: 250px;
+}
+
+.radio input {
+    width: 50px !important;
+}
+
+.radio p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d3a63;
+}
+
+.radio-label {
+  display: flex;
+  font-size: 15px;
+  color: #2d3a63;
+  cursor: pointer;
+  align-items: center;
+}
+
+.radio-label input[type="radio"] {
+    transform: scale(1.2);  /* make the circle a bit bigger */
 }

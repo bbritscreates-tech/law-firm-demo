@@ -44,111 +44,95 @@
                             <button class="accordion-header">Transfer / Bond Cost</button>
                             <div class="accordion-content">
                                 <form>
-                                    <label>Transfer</label>
+                                    <label>Transfer</label><br>
                                     <input name="Purchace Price" type="text" placeholder="Purchase Price (R)" required/>
-
-                                    <label>Bond</label>
+                                    <br>
+                                    <label>Bond</label><br>
                                     <input name="Bond Amount" type="text" placeholder="Bond Amount (R)" required/>
                                     <button type="submit">Calculate</button>
                                 </form>
                             </div>
                         </div>
-
                         <div class="accordion-item">
                             <button class="accordion-header">Bond Repayment</button>
                             <div class="accordion-content">
-                                <div class="accordion-content-inner">
-                                    <button class="accordion-content-inner-header">Monthly Installments</button>
-                                    <div class="inner-header-content">
-                                        <form>
-                                            <label>Amount</label>
-                                            <input name="Loan" type="text" placeholder="Loan Amount (R)" required/>
-
-                                            <label>Deposit</label>
-                                            <input name="deposit" type="text" placeholder="Deposit Amount (R)" required/>
-
-                                            <label>Interest Rate</label>
-                                            <input name="interest" type="number" placeholder="Annual Interest Rate (%)" required/>
-                                        </form>
-                                    </div>
+                                <button class="accordion-content-inner-header">Monthly Installments</button>
+                                <div class="inner-header-content">
+                                    <form>
+                                        <label>Amount</label><br>
+                                        <input name="Loan" type="text" placeholder="Loan Amount (R)" required/>
+                                        <br>
+                                        <label>Deposit</label><br>
+                                        <input name="deposit" type="text" placeholder="Deposit Amount (R)" required/>
+                                        <br>
+                                        <label>Interest Rate</label><br>
+                                        <input name="interest" type="number" placeholder="Annual Interest Rate (%)" required/>
+                                    </form>
                                 </div>
-                                <div class="accordion-content-inner">
-                                    <button class="accordion-content-inner-header">Lump Sum Payment</button>
-                                    <div class="inner-header-content">
-                                        <form>
-                                            <label>Amount</label>
-                                            <input name="Loan" type="text" placeholder="Loan Amount (R)" required/>
-
-                                            <label>Interest Rate</label>
-                                            <input name="interest" type="number" placeholder="Annual Interest Rate (%)" required/>
-
-                                            <label>Term of Loan (Years)</label>
-                                            <input name="term" type="number" placeholder="Term of Loan (Years)" required/>
-
-                                            <label>Your once off lump sum payment</label>
-                                            <input name="once off" type="text" placeholder="Lump sum (R)" required/>
-                                        </form>
-                                    </div>
+                                <button class="accordion-content-inner-header">Lump Sum Payment</button>
+                                <div class="inner-header-content">
+                                    <form>
+                                        <label>Amount</label><br>
+                                        <input name="Loan" type="text" placeholder="Loan Amount (R)" required/>
+                                        <br>
+                                        <label>Interest Rate</label><br>
+                                        <input name="interest" type="number" placeholder="Annual Interest Rate (%)" required/>
+                                        <br>
+                                        <label>Term of Loan (Years)</label><br>
+                                        <input name="term" type="number" placeholder="Term of Loan (Years)" required/>
+                                        <br>
+                                        <label>Your once off lump sum payment</label><br>
+                                        <input name="once off" type="text" placeholder="Lump sum (R)" required/>
+                                     </form>
                                 </div>
                             </div>
                         </div>
-
                         <div class="accordion-item">
                             <button class="accordion-header">Property practitioners professional fee</button>
                             <div class="accordion-content">
-                                <form>
-                                    <p>Are you enquiring as a ?</p>
-                                    <label>
-                                        <input type="radio" name="individual" value="individual">Individual
-                                    </label>
-
-                                    <label>
-                                        <input type="radio" name="Business" value="business">Business
-                                    </label>
+                                <form class="radio">
+                                    <p>Are you enquiring as a ?</p><br>
+                                    <label class="radio-label"><input type="radio" name="enquiry" value="individual">Individual</label>
+                                    <label class="radio-label"><input type="radio" name="enquiry" value="business">Business</label>
                                 </form>
-                                <div class="accordion-content-inner">
-                                    <button class="accordion-content-inner-header">Property Price Professional Fee</button>
-                                    <div class="inner-header-content">
-                                        <form>
-                                            <label>Price</label>
-                                            <input name="property price" type="text" placeholder="Property Price" required>
-
-                                            <label>Professional Fee (%)</label>
-                                            <input name="professional fee" type="number" placeholder="Estate Agency Professional Fee (%)" required>
-                                        </form>    
+                                <button class="accordion-content-inner-header">Property Price Professional Fee</button>
+                                <div class="inner-header-content">
+                                    <form>
+                                        <label>Price</label><br>
+                                        <input name="property price" type="text" placeholder="Property Price" required>
+                                        <br>
+                                        <label>Professional Fee (%)</label><br>
+                                        <input name="professional fee" type="number" placeholder="Estate Agency Professional Fee (%)" required>
+                                    </form>
                                 </div>
-                                <div class="accordion-content-inner">
-                                    <button class="accordion-content-inner-header">Property Practitioner Professional Fee</button>
-                                    <div class="inner-header-content">
-                                        <form>
-                                            <label>Price</label>
-                                            <input name="property price" type="text" placeholder="Property Price" required>
-
-                                            <label>Professional Fee Estate Agency (%)</label>
-                                            <input name="fee estate agency" type="number" placeholder="Professional Fee Estate Agency (%)" required>
-
-                                            <label>ProfessionalFee Property Practitioner (%)</label>
-                                            <input name="commission" type="number" placeholder="Commission Property Practitioner" required>
-                                        </form>
-                                    </div>        
+                                <button class="accordion-content-inner-header">Property Practitioner Fee</button>
+                                <div class="inner-header-content">
+                                    <form>
+                                        <label>Price</label><br>
+                                        <input name="property price" type="text" placeholder="Property Price" required>
+                                        <br>
+                                        <label>Professional Fee Estate Agency (%)</label><br>
+                                        <input name="fee estate agency" type="number" placeholder="Professional Fee Estate Agency (%)" required>
+                                        <br>
+                                        <label>ProfessionalFee Property Practitioner (%)</label><br>
+                                        <input name="commission" type="number" placeholder="Commission Property Practitioner" required>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-
                         <div class="accordion-item">
                             <button class="accordion-header">Cost per square meter</button>
                             <div class="accordion-content">
                                 <form>
-                                    <label>Price</label>
+                                    <label>Price</label><br>
                                     <input name="selling" type="text" placeholder="Selling Price" required>
-
-                                    <label>Size</label>
+                                    <br>
+                                    <label>Size</label><br>
                                     <input name="size" type="text" placeholder="Size i m&sup2;">
                                 </form>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="calculator-divs">
                     <img src="assets/images/Calculator-img.png" alt="Description of a purchaser and a seller image"/>
@@ -199,20 +183,19 @@
         </footer>
 
         <script>
-            const headers = document.querySelectorAll(".accordion-header");
+  // Outer accordion
+  const outerHeaders = document.querySelectorAll(".accordion-header");
 
-  headers.forEach(header => {
+  outerHeaders.forEach(header => {
     header.addEventListener("click", () => {
       const openItem = document.querySelector(".accordion-header.active");
-      
-      // close already open one
+
       if (openItem && openItem !== header) {
         openItem.classList.remove("active");
         openItem.nextElementSibling.style.maxHeight = null;
         openItem.nextElementSibling.style.padding = "0 15px";
       }
 
-      // toggle current
       header.classList.toggle("active");
       const content = header.nextElementSibling;
 
@@ -225,6 +208,42 @@
       }
     });
   });
-        </script>
+
+  // Inner accordion with parent resize
+  const innerHeaders = document.querySelectorAll(".accordion-content-inner-header");
+
+  innerHeaders.forEach(header => {
+    header.addEventListener("click", () => {
+      const openItem = document.querySelector(".accordion-content-inner-header.active");
+
+      if (openItem && openItem !== header) {
+        openItem.classList.remove("active");
+        openItem.nextElementSibling.style.maxHeight = null;
+        openItem.nextElementSibling.style.padding = "0 15px";
+      }
+
+      header.classList.toggle("active");
+      const content = header.nextElementSibling;
+
+      if (header.classList.contains("active")) {
+        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.padding = "15px";
+      } else {
+        content.style.maxHeight = null;
+        content.style.padding = "0 15px";
+      }
+
+      // 🔥 Resize parent accordion-content when inner expands
+      const parentContent = header.closest(".accordion-content");
+      if (parentContent && parentContent.previousElementSibling.classList.contains("active")) {
+        parentContent.style.maxHeight = null;
+        setTimeout(() => {
+            parentContent.style.maxHeight = parentContent.scrollHeight + "px";
+        }, 200);
+      }
+    });
+  });
+</script>
+
     </body>
 </html>
