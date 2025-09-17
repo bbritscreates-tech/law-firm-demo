@@ -572,8 +572,17 @@ button {
     border-top: none;
 }
 
-.accordion-content p {
-    margin: 15px 0;
+.accordion-content form {
+    margin: 10px 0;
+}
+
+.accordion-content form button {
+    background-color: #CFAF64;
+    color: #2d3a63;
+}
+.accordion-content form button:hover {
+    background-color: #2d3a63;
+    color: #CFAF64;
 }
 
 .accordion-content-inner {
