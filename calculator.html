@@ -37,8 +37,8 @@
                 </div>
             </section>
 
-            <section>
-                <div>
+            <section class="calculator-section">
+                <div class="calculator-divs">
                     <div class="accordion">
                         <div class="accordion-item">
                             <button class="accordion-header">Transfer / Bond Cost</button>
@@ -81,7 +81,7 @@
                     </div>
                     
                 </div>
-                <div>
+                <div class="calculator-divs">
                     <img src="assets/images/Calculator-img.png" alt="Description of a purchaser and a seller image"/>
                 </div>
             </section>
@@ -128,5 +128,34 @@
                 <p>&copy; Copyright Harrington & Cole Attorneys. All rights reserved 2025</p>
             </div>
         </footer>
+
+        <script>
+            const headers = document.querySelectorAll(".accordion-header");
+
+  headers.forEach(header => {
+    header.addEventListener("click", () => {
+      const openItem = document.querySelector(".accordion-header.active");
+      
+      // close already open one
+      if (openItem && openItem !== header) {
+        openItem.classList.remove("active");
+        openItem.nextElementSibling.style.maxHeight = null;
+        openItem.nextElementSibling.style.padding = "0 15px";
+      }
+
+      // toggle current
+      header.classList.toggle("active");
+      const content = header.nextElementSibling;
+
+      if (header.classList.contains("active")) {
+        content.style.maxHeight = content.scrollHeight + "px";
+        content.style.padding = "15px";
+      } else {
+        content.style.maxHeight = null;
+        content.style.padding = "0 15px";
+      }
+    });
+  });
+        </script>
     </body>
 </html>

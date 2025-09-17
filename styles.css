@@ -509,8 +509,23 @@ button {
     gap: 60px;
 }
 
-.accordion {
+.calculator-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 40px;
+    height: auto;
+}
 
+.calculator-divs {
+
+}
+
+.accordion {
+    max-width: 600px;
+    margin: 20 auto;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .accordion-inner {
@@ -518,13 +533,53 @@ button {
 }
 
 .accordion-header {
+    width: 100%;
+    padding: 15px;
+    background: #3D4162;
+    color: #fff;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s;
+}
 
+.accordion-header:hover {
+    background: #2C2F48;
+}
+
+.accordion-header::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+.accordion-header.active::after {
+    content: "-";
 }
 
 .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #F9F9F9;
+    padding: 0 15px;
+    transition: max-height 0.4s ease, padding 0.3s;
+    border: 1px solid #ddd;
+    border-top: none;
+}
 
+.accordion-content p {
+    margin: 15px 0;
 }
 
 .accordion-content-inner {
-    
+
+}
+
+.calculator-divs img {
+    width: 600px;
 }
