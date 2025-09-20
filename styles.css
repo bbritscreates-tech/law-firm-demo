@@ -48,16 +48,45 @@ a {
 
 .nav-links {
     padding: 0 10px;
+    display: flex;
 }
 
 .nav-links a {
     padding: 0 10px;
     color: #fff;
     font-size: 18px;
+    text-align: center;
+    text-decoration: none;
 }
 
-.nav-links a:hover {
+.nav-links a:hover, .dropdown:hover .dropbtn {
     color: #CFAF64;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ddd;
+    min-width: 220px;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    padding: 3px 5px;
+    display: block;
+    white-space: nowrap;
+    color: #2d3a63;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .menu-toggle {
@@ -675,3 +704,4 @@ button {
 .radio-label input[type="radio"] {
     transform: scale(1.2);  /* make the circle a bit bigger */
 }
+
