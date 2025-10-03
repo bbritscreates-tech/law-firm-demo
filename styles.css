@@ -132,7 +132,7 @@ a {
 
 .hero-content h1 {
     font-size: 40px;
-    color: rgb(11, 45, 145, 1);
+    color: #CFAF64;
     padding-bottom: 20px;
 }
 
@@ -270,39 +270,8 @@ a {
     text-align: center;
 }
 
-.cost-calculator-section {
-    width: 100%;
-    padding: 20px 20px;
-    background-color: #e0e0e1;
-    height: auto;
-    justify-items: center;
-    text-align: center;
-}
-
 hr {
     border: 1px solid #CFAF64;
-}
-
-.cost-calculator-section h2 {
-    padding: 20px 0;
-    font-size: 30px;
-    color: rgb(11, 45, 145, 1);
-}
-
-.cost-calculator-section p {
-    padding-bottom: 20px;
-}
-
-.cost-calculator-section a {
-    text-decoration: none;
-    color: #fff;
-    background-color: rgb(11, 45, 145, 0.5);
-    padding: 8px 10px;
-    border-radius: 6px;
-}
-
-.cost-calculator-section a:hover {
-    color: #CFAF64;
 }
 
 footer {
@@ -536,172 +505,5 @@ button {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 60px;
-}
-
-.calculator-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 30px;
-    padding: 30px 35px;
-}
-
-.calculator-divs{
-    flex: initial;
-}
-
-.calculator-divs img {
-    width: 600px;
-    height: auto;
-    display: block;
-}
-
-.accordion {
-    width: 350px;
-    border-radius: 5px;
-    overflow: hidden;
-    border: 1px solid #ddd;
-    padding: 5px 5px;
-}
-
-.accordion-header {
-    padding: 8px 10px;
-    background: #3D4162;
-    color: #fff;
-    text-align: left;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    cursor: pointer;
-    position: relative;
-    transition: background 0.3s;
-    margin-bottom: 5px;
-    width: 350px;
-}
-
-.accordion-header:hover {
-    background: #2C2F48;
-}
-
-.accordion-header::after {
-    content: "+";
-    position: absolute;
-    right: 20px;
-    font-size: 18px;
-    transition: transform 0.3s;
-}
-
-.accordion-header.active::after {
-    content: "-";
-}
-
-.accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    background: #F9F9F9;
-    padding: 0 15px;
-    transition: max-height 0.4s ease, padding 0.3s;
-    border: 1px solid #ddd;
-    border-top: none;
-}
-
-.accordion-content form {
-    margin: 10px 0;
-}
-
-.accordion-content form button {
-    background-color: #CFAF64;
-    color: #2d3a63;
-    margin: 10px auto;
-}
-
-.accordion-content form button:hover {
-    background-color: #2d3a63;
-    color: #CFAF64;
-}
-
-.accordion-content-inner-header {
-    padding: 8px 10px;
-    background: gray;
-    color: #fff;
-    text-align: left;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    cursor: pointer;
-    position: relative;
-    transition: background 0.3s;
-    margin-bottom: 5px;
-    width: 300px;
-}
-
-.accordion-content-inner-header:hover {
-    background: #CFAF64;
-}
-
-.accordion-content-inner-header::after {
-    content: "+";
-    position: absolute;
-    right: 20px;
-    font-size: 18px;
-    transition: transform 0.3s;
-}
-
-.accordion-content-inner-header.active::after {
-    content: "-";
-}
-
-.inner-header-content {
-    max-height: 0;
-    overflow: hidden;
-    background: #F9F9F9;
-    padding: 0 15px;
-    transition: max-height 0.4s ease, padding 0.3s;
-    border: 1px solid #ddd;
-    border-top: none;
-}
-
-/* Default state: hidden */
-.accordion-content,
-.inner-header-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
-  padding: 0 15px;
-}
-
-.accordion-content form label {
-    font-size: 18px;
-    font-weight: 600;
-    color: #2d3a63;
-}
-
-.accordion-content form input {
-    margin: 10px 0;
-    width: 250px;
-}
-
-.radio input {
-    width: 50px !important;
-}
-
-.radio p {
-    font-size: 18px;
-    font-weight: 600;
-    color: #2d3a63;
-}
-
-.radio-label {
-  display: flex;
-  font-size: 15px;
-  color: #2d3a63;
-  cursor: pointer;
-  align-items: center;
-}
-
-.radio-label input[type="radio"] {
-    transform: scale(1.2);  /* make the circle a bit bigger */
 }
 
